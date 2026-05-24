@@ -105,3 +105,8 @@ web_modules/
 dist/
 build/
 out/
+.vercel
+
+# Custom excludes
+clawd/
+pnpm-lock.yaml
