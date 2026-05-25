@@ -465,7 +465,7 @@ export default function App() {
                         const Icon = isIncome ? DollarSign : (details?.icon || HelpCircle)
                         
                         return (
-                          <div key={t.id} className="group bg-zinc-950/40 hover:bg-zinc-900/40 p-3 rounded-xl border border-zinc-850 flex justify-between items-center transition-all duration-200">
+                          <div key={t.id} className="group bg-zinc-950/40 hover:bg-zinc-900/40 p-3 rounded-xl border border-zinc-800 flex justify-between items-center transition-all duration-200">
                             <div className="flex items-center gap-3">
                               <div className={`h-9 w-9 rounded-lg flex items-center justify-center border shrink-0 ${
                                 isIncome 
@@ -672,7 +672,7 @@ export default function App() {
                     const Icon = isIncome ? DollarSign : (details?.icon || HelpCircle)
 
                     return (
-                      <div key={t.id} className="group bg-zinc-950/40 hover:bg-zinc-900/30 p-3.5 rounded-xl border border-zinc-850/80 flex justify-between items-center transition-all duration-200">
+                      <div key={t.id} className="group bg-zinc-950/40 hover:bg-zinc-900/30 p-3.5 rounded-xl border border-zinc-800/80 flex justify-between items-center transition-all duration-200">
                         <div className="flex items-center gap-3">
                           <div className={`h-9.5 w-9.5 rounded-lg flex items-center justify-center border shrink-0 ${
                             isIncome 
@@ -758,7 +758,7 @@ export default function App() {
                       <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                         <button 
                           onClick={() => uploadMockReceipt('food')}
-                          className="px-3.5 py-2.5 bg-zinc-950 border border-zinc-850 hover:border-emerald-500/30 rounded-xl text-left hover:bg-zinc-900/50 transition-colors text-xs space-y-1 cursor-pointer"
+                          className="px-3.5 py-2.5 bg-zinc-950 border border-zinc-800 hover:border-emerald-500/30 rounded-xl text-left hover:bg-zinc-900/50 transition-colors text-xs space-y-1 cursor-pointer"
                         >
                           <div className="font-bold text-white flex items-center gap-1.5">
                             <Utensils className="h-3.5 w-3.5 text-red-400" />
@@ -769,7 +769,7 @@ export default function App() {
 
                         <button 
                           onClick={() => uploadMockReceipt('transport')}
-                          className="px-3.5 py-2.5 bg-zinc-950 border border-zinc-850 hover:border-emerald-500/30 rounded-xl text-left hover:bg-zinc-900/50 transition-colors text-xs space-y-1 cursor-pointer"
+                          className="px-3.5 py-2.5 bg-zinc-950 border border-zinc-800 hover:border-emerald-500/30 rounded-xl text-left hover:bg-zinc-900/50 transition-colors text-xs space-y-1 cursor-pointer"
                         >
                           <div className="font-bold text-white flex items-center gap-1.5">
                             <Car className="h-3.5 w-3.5 text-blue-400" />
@@ -780,7 +780,7 @@ export default function App() {
 
                         <button 
                           onClick={() => uploadMockReceipt('bill')}
-                          className="px-3.5 py-2.5 bg-zinc-950 border border-zinc-850 hover:border-emerald-500/30 rounded-xl text-left hover:bg-zinc-900/50 transition-colors text-xs space-y-1 cursor-pointer"
+                          className="px-3.5 py-2.5 bg-zinc-950 border border-zinc-800 hover:border-emerald-500/30 rounded-xl text-left hover:bg-zinc-900/50 transition-colors text-xs space-y-1 cursor-pointer"
                         >
                           <div className="font-bold text-white flex items-center gap-1.5">
                             <Receipt className="h-3.5 w-3.5 text-amber-400" />
@@ -798,7 +798,7 @@ export default function App() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
                     
                     {/* Laser Sweeper scanning frame */}
-                    <div className="relative overflow-hidden bg-zinc-950 border border-zinc-850 rounded-xl h-56 flex items-center justify-center p-4">
+                    <div className="relative overflow-hidden bg-zinc-950 border border-zinc-800 rounded-xl h-56 flex items-center justify-center p-4">
                       {mockPreviewUrl ? (
                         <img src={mockPreviewUrl} alt="Receipt preview" className="max-h-full rounded max-w-full object-contain opacity-50 filter blur-[0.5px]" />
                       ) : (
@@ -864,7 +864,7 @@ export default function App() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       
                       {/* Preview Thumb */}
-                      <div className="bg-zinc-950 border border-zinc-850 rounded-xl h-56 flex items-center justify-center p-4 relative group">
+                      <div className="bg-zinc-950 border border-zinc-800 rounded-xl h-56 flex items-center justify-center p-4 relative group">
                         {mockPreviewUrl ? (
                           <img src={mockPreviewUrl} alt="Receipt preview" className="max-h-full rounded max-w-full object-contain" />
                         ) : (
@@ -876,7 +876,7 @@ export default function App() {
                       </div>
 
                       {/* Review draft fields form */}
-                      <div className="space-y-3 bg-zinc-950/40 p-4 rounded-xl border border-zinc-850">
+                      <div className="space-y-3 bg-zinc-950/40 p-4 rounded-xl border border-zinc-800">
                         <h4 className="text-xs font-bold text-zinc-300 pb-1.5 border-b border-zinc-800/80 mb-2">Review Extracted Metadata</h4>
                         
                         {/* Amount */}
@@ -930,7 +930,7 @@ export default function App() {
                         <div className="flex gap-2 pt-3">
                           <button 
                             onClick={handleResetScanner}
-                            className="flex-1 py-2 bg-zinc-900 hover:bg-zinc-850 text-zinc-300 border border-zinc-800 rounded-lg text-xs font-semibold transition-colors cursor-pointer"
+                            className="flex-1 py-2 bg-zinc-900 hover:bg-zinc-800 text-zinc-300 border border-zinc-800 rounded-lg text-xs font-semibold transition-colors cursor-pointer"
                           >
                             Discard
                           </button>
@@ -956,7 +956,7 @@ export default function App() {
                 <form onSubmit={handleAddManualTransaction} className="space-y-4">
                   
                   {/* Sliding Inflow/Outflow type toggle */}
-                  <div className="flex rounded-xl bg-zinc-950 p-1 border border-zinc-850">
+                  <div className="flex rounded-xl bg-zinc-950 p-1 border border-zinc-800">
                     <button 
                       type="button"
                       onClick={() => setFormType('expense')}
@@ -1064,7 +1064,7 @@ export default function App() {
                   <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
                     
                     {/* Left Column: Customized SVG Donut Ring */}
-                    <div className="md:col-span-5 flex flex-col items-center justify-center p-4 bg-zinc-950/40 rounded-xl border border-zinc-850">
+                    <div className="md:col-span-5 flex flex-col items-center justify-center p-4 bg-zinc-950/40 rounded-xl border border-zinc-800">
                       <div className="relative h-44 w-44">
                         <svg viewBox="0 0 100 100" className="w-full h-full transform -rotate-90">
                           {/* Background Track Circle */}
@@ -1095,7 +1095,7 @@ export default function App() {
                     </div>
 
                     {/* Right Column: Breakdown Table List */}
-                    <div className="md:col-span-7 space-y-3 bg-zinc-950/20 p-2.5 rounded-xl border border-zinc-850">
+                    <div className="md:col-span-7 space-y-3 bg-zinc-950/20 p-2.5 rounded-xl border border-zinc-800">
                       <h4 className="text-xs font-bold text-zinc-400 px-2 uppercase tracking-wide">Category Distribution</h4>
                       
                       <div className="space-y-1.5 max-h-[300px] overflow-y-auto scrollbar-thin">
@@ -1105,7 +1105,7 @@ export default function App() {
                           const pct = Math.round((val / totalExpenseSum) * 100)
                           
                           return (
-                            <div key={cat} className="p-2.5 bg-zinc-950/40 border border-zinc-850 rounded-xl flex items-center justify-between text-xs hover:border-zinc-800 transition-colors">
+                            <div key={cat} className="p-2.5 bg-zinc-950/40 border border-zinc-800 rounded-xl flex items-center justify-between text-xs hover:border-zinc-800 transition-colors">
                               <div className="flex items-center gap-3">
                                 <span className="h-3.5 w-3.5 rounded-lg shrink-0" style={{ backgroundColor: details.color }}></span>
                                 <span className="font-semibold text-white">{cat}</span>
